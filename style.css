@@ -1,0 +1,1055 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------END_OF_RESET-----------*/
+
+
+
+/*__________________________MEDIAQUERY___________________*/
+
+/*_______________________minwidth1016pxmaxwidth3200px__________*/
+@media only screen and (min-width: 1016px) and (max-width: 3200px){
+  #actiontablet, #dropnavmobile, #hamburger, #tripsII {
+    display:none;
+  }
+}
+
+/*_______________________minwidth721pxmaxwidth1015px__________*/
+@media only screen and (min-width: 721px) and (max-width: 1015px){
+    #dropbtn, #title, .navbarright, #tripsII {
+      display: none;
+    }
+    header {
+    
+      margin-left: 25%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(champlainfishingguides/champlainlogo.svg);
+      
+    }
+    #contact h2 {
+        font-size: 30px;
+    }
+    #contact h3 {
+      font-size: 25px;
+    }
+      #contact p {
+      font-size: 15px;
+    }
+   
+    #dropnav a {
+      font-size: 20px;
+    }  
+    .gallery {
+        padding-top: 0px;
+    } 
+    #actionOne .link, #actionTwo .linktwo, a, h4 {
+        font-size: 24px;
+    }
+    #actiontablet {
+      display: none;
+    }
+  
+}
+/*_______________________maxwidth721px__________*/
+@media only screen and (max-width: 721px){
+  header {
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(champlainfishingguides/champlainlogo.svg);
+    
+  }
+  #dropbtn, #title, #animationone, .navbarright, #trips {
+    display: none;
+  }
+  #gal .container .btn {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  #action.actioncolumn{
+    display: none;
+  }
+  .actionrowtab {
+    width: 80%;
+    height: 350px;
+    margin: 0px 10%;
+  }
+  #actionOnetab {
+    background-image: url('champlainfishingguides/beggsparkessexny.png');
+    background-size: cover;
+    background-position: center;
+  }
+  #actionTwotab {
+    background-image: url('champlainfishingguides/beggspark02.png');
+    background-size: cover;
+  }
+  #actiontitletab h4 {
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.75;
+    padding: 25% 5% 25% 5%;
+    background-color: #003333;
+  }
+  .link {
+    position: relative;
+    top: 45%;
+    left: 25%;
+    background-color: #669999;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .linktwo {
+    position: relative;
+    top: 45%;
+    left: 25%;
+    
+    background-color: #669999;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  #action
+  {
+    display: none;
+  }
+  .contactusphone a{
+    font-size: 36px;
+  }
+
+  #gallalink h3 {
+    font-size: 15px;
+  }
+  #tripsII {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  #tripsII h2 {
+    padding: 5%;
+    text-align: center;
+  }
+  .triprowII h3 {
+    padding:2%;
+  }
+  .triprowII {
+    padding: 5%;
+    margin: 5%;
+    background-color: #cc8843;
+  }
+  .tripparagraphsII {
+    padding: 5%;
+  }
+  }
+
+
+
+  /*__________________________ENDOFMEDIAQUERY_____________________*/
+
+body {
+  width: 100%;
+  font-family: 'Josefin Sans' sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #003333;
+  background-color: #B84300;
+  background-position: center;
+}
+.dropbtn {
+  background-color: #336666;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #336666;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+a {
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 33px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -1px;
+    
+}
+
+h3 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 400;
+   font-size: 24px;  
+}
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+header {
+  width: 90%;
+  height: 100px;
+  margin: 0 5%;
+  color: #ffffff;
+  background-color: #003333;
+  
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Dropdown Button */
+
+
+#dropbtn {
+    width: 11%;
+    height: 8%;
+    padding: 5%;
+    margin-left: 5%;
+    border-radius: 1%;
+    background-image: url(champlainfishingguides/champlainlogo.svg);
+    background-repeat: no-repeat;
+    background-color: #669999;
+    border-style: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: none;
+    position: fixed;
+    
+    background-color: white;
+   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {padding: 12px 16px;background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #003333;}
+
+  /*________________________________________________END_OF_STICKY_DROPDOWN---------------------------------------------------------------------*/  
+
+  /*______________________--__________--__________---__________--_________---______-BOOK_Button_____________*/
+
+@keyframes animationone {
+  from {background-color:#003333;}
+  to {
+    color: #ffffff;
+    background-color: #669999;}
+}
+
+.book {
+  animation-name: animationone;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  color: #003333;
+  padding: 10px 25px;
+  
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  float: right;
+}
+
+.book :hover {
+  
+  color: #ffffff;
+  background-color: #003333;
+}
+
+.book a:hover {
+  color: #ffffff;
+  background-color: #003333;
+}
+ /*______________________--__________--__________---__________--_________---______-BOOK_Button_____________*/
+
+
+
+/*__------_________------______----___------NAVBAR_________---______--__-----__-------___-----_-_-_-_-_--_-_-_--_-_-_----_--*/
+
+
+#title {
+  padding: 1%;
+  margin: 1% auto 1% 22%;
+}
+nav li {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  padding: 16px;
+  background-color: #003333;
+}
+
+
+.navbarright {
+  margin-left: 38%;
+}
+nav a:hover {
+  padding: 1%;
+  border-bottom: 1px solid #ffffff;
+  }
+
+/*-----_________------______----___------NAVBAR_________---______--__-----__-------___-----_-_-_-_-_--_-_-_--_-_-_----_--*/
+
+
+
+/*___________________________________GALLERY__________________________________________________________*/
+
+
+
+
+
+#gal {
+  background-color: #ffffff;
+}
+.gallery {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #669999;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+  letter-spacing: 2px;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+/*_____________________________FADING_ANIMATION_______________________*/
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/*-----------------------------DOTS____________________________*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #336666;
+}
+/*___________________________________GALLERY__________________________________________________________*/
+
+/*_______________ACCORDIAN_MENU______________________*/
+#featuredacc {
+  background-color: #cc8843;
+}
+#featuredacc h2 {
+  padding: 5%;
+  text-align: center;
+
+}
+
+.accordion {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color:#ffffff;
+    background-color: #336666;
+    cursor: pointer;
+    padding: 18px;
+    width: 99.5%;
+    margin: .25%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #B84300; 
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #003333;
+    overflow: hidden;
+    
+  }
+  .panelimage {
+    width: 50%;
+    padding: 5%;
+    float: left;
+    overflow: hidden;
+    background-position: center;
+
+  }
+  .panelp {
+      width: 30%;
+      margin: 15% 10% 0 10%; 
+      padding: 2%;
+      float: right;
+      background-color: #ffffff;
+      
+    }
+    
+  
+
+
+
+/*_______________________CALL-TO-Action__________*/
+
+
+
+/*Is it possible to get these divs to change from this three 
+column to one column when the max-width is 700px? 
+I could only get one to work at a time. I got it!*/
+
+#action {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.actionrow {
+  width: 33.3%;
+  background-color: #003333;
+}
+
+.actionrow .link {
+  position: relative;
+  top: 45%;
+  left: 25%;
+  background-color: #669999;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+  letter-spacing: 2px;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.actionrow .linktwo {
+  position: relative;
+  top: 45%;
+  left: 25%;
+  background-color: #669999;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+  letter-spacing: 2px;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#actionOne{
+	background-image: url('champlainfishingguides/beggsparkessexny.png');
+	background-size: cover;
+}
+
+#actionTwo{
+	background-image: url('champlainfishingguides/beggspark02.png');
+	background-size: cover;
+}
+
+.actionrow .link:hover {
+  background-color: #003333;
+}
+
+.actionrow .linktwo:hover {
+  background-color: #003333;
+}
+
+#actiontitle {
+  text-align: center;
+  line-height: 1.75;
+  padding: 7% 5% 7% 5%;
+  background-color: #003333;
+}
+
+.actioncolumn {
+  background-color: #003333;
+}
+/*_____________________CALL-TO-Action____________*/
+
+/*_______________________CALL-TO-Action____________*/
+
+
+
+/*______________________________CONTACTus!!______________________FORM_STYLE_____________________*/
+#contactbg {
+  background-repeat: no-repeat;
+  background-image: url(champlainfishingguides/champlainbridge.png);
+}
+.contact {
+  margin: 2%;
+  display: flex;
+  background-color: white;
+}
+.formstyle {
+  padding: 5%;
+  width: 50%;
+  height: auto;
+  margin: 5% 25% 5% 25%;
+  text-align: left;
+  color: white;
+  background-color: #003333;
+}
+
+.contactus {
+  color: white;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+.contactus h3 {
+  padding: 3%;
+}
+
+.contactus p {
+  padding:  3%;
+  text-align: left;
+}
+
+input[type=text] {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  height: auto;
+  width: 100%;
+  padding: 1%;
+  margin: 3%;
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  width: 98%;
+  height: 130px;
+  padding: 1%;
+  margin: 2%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.btncontact {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: #669999;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btncontact:hover {
+  background-color: #003333;
+}
+.contactusphone {
+  padding:  3%;
+  text-align: left;
+}
+
+.contactusphone a {
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+.contactusphone a:hover {
+  color: #003333;
+  background-color: #669999;
+}
+
+.title {
+  padding-top: 3%;
+  
+  color: #003333;
+  text-align: center;
+}
+
+#trips {
+  width: 90%;
+  height: 320px;
+  padding: 1%;
+  margin: 0 5% 25% 5%;
+  background-color: #ffffff;
+}
+
+
+
+.triprow{
+  width: 25%;
+  height: auto;
+  padding: 5% 1% 2% 1%;
+  overflow: hidden;
+  background-color: #ffffff;
+  float: left;
+}
+
+.triprow h3 {
+  padding: 5%;
+  text-align: left;
+}
+.triprow img {
+  margin: 0 3%;
+}
+.tripparagraphs {
+  padding: 10%;
+}
+/*____________________________________________Featured_Trips______________________________________*/
+
+
+
+/*_____________________________________________this-is-ABOUT____US________________*/
+
+#about {
+  width: 80%;
+  margin: 0 10% 5% 10%;
+  background-color:#cc8843;
+  background-size: contain;
+}
+
+#about h2 {
+  padding-top: 3%;
+  margin-left: 20%;
+  color: #003333;
+}
+
+.aboutrow {
+  width: 30%;
+  padding: 3%;
+  height: auto;
+  display: flex;
+}
+
+.aboutcolumn p {
+  padding: 20%;
+}
+
+.aboutrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutcolumn {
+  overflow: hidden;
+  flex: 35%;
+}
+
+/*_____________________________________myVideo______W3schools_________________________*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 90%; 
+  min-height: 100%;
+
+}
+.content p {
+  width: 60%;
+  font-size: 24px;
+  padding: 3%;
+}
+.content h1 {
+  padding: 3%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+  letter-spacing: 2px;
+  width: 200px;
+  margin: 3%;
+  padding: 10px;
+  border: none;
+  background: #003333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ffffff;
+  color: #003333;
+}
+/*_____________________________________myVideo______W3schools__________________________*/
+
+
+
+/*-------------------------------------------------------------FOOTER__________----------_____________-----------*/
+
+footer {
+  width: 100%;
+  height: 400px;
+  overflow:hidden ;
+  background-image: url(champlainfishingguides/champlainbridgeorg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #003333;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#footerlogo {
+  width: 33%;
+
+}
+#fishy {
+  width: 150px;
+  padding: 5%;
+  margin-bottom: 1%;
+}
+.phone {
+  padding:3%;
+}
+#gallalink {
+  width:30%;
+  padding:3%;
+  text-align: center;
+}
+#gallalink h3 {
+  padding: 2%;
+}
+#gallalink h2:hover{
+  border-bottom: 1px solid #ffffff;
+}
+#footerlogo {
+  text-align: center;
+}
+
+#links {
+  width: 29%;
+  padding: 5% 2% 5% 2%; 
+  color: white;
+  text-align: left;
+}
+
+#links a {
+  font-family:'Josefin Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 200%;
+  display: block;
+}
+#links a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/* Clear floats after the columns */
+footer .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 28%;
+  height: 300px;
+  margin-left: 2.5%;
+  padding-top: 5%;
+  padding-right: 2%;
+  color: white;
+  text-align: right;
+  float: left;
+}
+
+#newsletter p {
+  text-align: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  padding: 10% 0 10% 0;
+}
+.signup {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  color:#ffffff;
+  font-weight: 200;
+  border: none;
+  background-color: #669999;
+}
+#social {
+  
+  text-align: center;
+}
+.media {
+  padding: 2%;
+  display: inline-block;
+}
+
+
+
+
+
