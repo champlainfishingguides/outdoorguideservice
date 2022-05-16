@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Final Project Code</title>
+        <title>Champlain Fishing Outdoor Guide Service</title>
         <meta charset="UTF-8">
         <meta name="description" content="New York State licensed guide service">
         <meta name="keywords" content="Fishing Guide, Outdoor Guide Service, New York State Fishing">
         <meta name="author" content="burntcrometoaster">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="style.css" type="text/css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -18,18 +19,29 @@
 <body>
              
 <header>
-<div id="hamburger" class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"><div class="container" onclick="myFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    </div></button>
+    <!--______________--__---__---_--MobileNavigationMenu________---_--_-------->
+    <div id="hamburger" class="topnav">
+        <a href="index.html" class="active"><img src="champlainfishingguides/champlainlogo.svg"></a>
+<!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#trips">Trips</a>
+            <a href="contact.html#contact">Contact</a>
+        </div>
+
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--______________--__---__---_--MobileNavigationMenu________---_--_-------->
 
   <div id="myDropdown" class="dropdown-content">
-    <a href="index.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#featuredacc">Trips</a>
-                        <a href="contact.html#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#featuredacc">Trips</a>
+        <a href="contact.html#contact">Contact</a>
                        
   </div>
 </div>
@@ -282,6 +294,20 @@
          We know everybody of water has different regulations and can keep you within them. We provide everything you need for a great day on the water. Tackle, effective bait and we know where the fish are!</p>
 </div>
 
+</section> 
+   <section id="abouttab" class="aboutrowtab">
+    <div class="aboutcolumntab">
+    
+    <img src="champlainfishingguides/seanandpoppy.png"
+        alt="Sean and His Father">
+    </div>
+
+    <div id="aboutmobile" class="aboutcolumntab"><h2>About Us</h2>
+        <p>We are NYS licenced guides that can show you a great day on the water, whether on the ponds, lakes, rivers, and streams of New York State.
+         We know everybody of water has different regulations and can keep you within them. We provide everything you need for a great day on the water. Tackle, effective bait and we know where the fish are!</p>
+    </div>
+
+
 </section>
 <!--END_OF_ABOUT---------------------------------------------->
 
@@ -291,8 +317,8 @@
 <footer class="row">
 
     
-    <!--COLUMN01-->
-    
+
+    <section id="desktopfoot">
         <div id="links" class="column">  
             <div><h3>LINKS</h3></div>
                     <a href="index.html">Home</a>
@@ -306,7 +332,7 @@
            
             <a href="index.html"><img src="champlainfishingguides/champlainfishingguideslogo.svg" id="fishy"></a>
            
-            <a id="gallalink" href="https://www.champlainfishingguides.com"><h3>champlainfishingguides.com</h3></a>
+            <a id="gallalink" href="https://champlainfishingguides.github.io/outdoorguideservice/index.html"><h3>champlainfishingguides.github.io</h3></a>
 
             <div class="phone"><a href="tel:760-914-3691"><h2>(760)914-3691</h2></a></div>
         
@@ -335,12 +361,75 @@
                 <a href="contact.html#contact"><img src="champlainfishingguides/pintrest.png"></a>
             </div>
         </div>
+    </section>
+
+ <!--FooterFOR_MEDIAmax721px-->
+
+<div id="mobilefooter">
+
+<div id="footerlogotab" class="columntab">
    
+    <a href="index.html"><img src="champlainfishingguides/champlainlogo.svg" id="fishytab"></a>
+   
+    <a id="gallalinktab" href="https://champlainfishingguides.github.io/outdoorguideservice/index.html"><h3>champlainfishingguides.github.io</h3></a>
+
+    <div class="phone"><a href="tel:760-914-3691"><h2>(760)914-3691</h2></a></div>
+
+</div>
+
+ <div id="linkstab" class="columntab">  
+    <div><h3>LINKS</h3></div>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="contact.html#contact">Contact</a>
+            <a href="book.html">Book</a>
+</div>
+
+<div id="socialtab">
+    <div id="instagram" class="mediatab">
+        <a href="contact.html#contact"><img src="champlainfishingguides/insta.png"></a>
+    </div>
+    <div id="facebook" class="mediatab">
+        <a href="contact.html#contact"><img src="champlainfishingguides/facebook.png"></a>
+    </div>
+    <div id="pintrest" class="mediatab">
+        <a href="contact.html#contact"><img src="champlainfishingguides/pintrest.png"></a>
+    </div>
+</div>
+
+
+<div id="newslettertab" class="columntab">
+    <h3>NEWSLETTER</h3>
+    <form action="http://www.champlainguideservice.com/subscribe.php">
+        <p><em>Subscribe for exclusive offers, special events and further explorations.</em></p>
+
+        <input type="email" name="email"/>
+        <button class="signup" input type="submit" value="Sign up">Sign up</button>
+    </form>
+</div>
+</div> 
+
+</footer>
+  <!--FooterFOR_MEDIAmax721px-->
     
 </footer>
 <!--END_OF_FOOTER__--------------------->
 
 <!----______________________________JAVASCRIPT_____________________________________-->
+<!--______________--__---__---_--MobileNavigationMenuJAVASCRIPT________---_--_-------->
+
+<script>
+  
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    <!--______________--__---__---_--MobileNavigationMenuJAVASCRIPT________---_--_-------->
 <!--______-----______----__--__---__---_--GallryScript____________----___---_--_-_--->
 <script>
     var slideIndex = 0;
@@ -362,13 +451,10 @@
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 4000); 
     }
-
-    function myFunction(x) {
-  x.classList.toggle("change");
-}
     </script>
 
 <!--______-----______----__--__---__---_--GallryScript____________----___---_--_-_--->
+
 <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -384,25 +470,7 @@
         }
       });
     }
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
     </script>
 
