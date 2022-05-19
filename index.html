@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--MobileGallery-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="style.css" type="text/css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -154,7 +156,7 @@
                 <img src="champlainfishingguides/oswegosalmonrun.png"
                 class="mySlides2 w3-animate-fading"
                 style="width:100%"
-                alt="Sean holding two 20lb Salmon."
+                alt="Sean holding a nice Salmon Hen."
                 title="Salmon of Oz"
                 width="1300"
                 height="auto">
@@ -170,6 +172,39 @@
         </div>
     </section>
 <!--END_OF_GALLERY-------------------------------------------->
+<!--MobileGaller-->
+<section id="galII">
+<div class="w3-content w3-section">
+    <img class="mySlidesTwo w3-animate-fading" 
+        src="champlainfishingguides/catfishtripmobile.png"
+        alt="Sean kissing a 20lb channel catfish."
+        title="Lake Champlain Catfish Trips" 
+        style="width:100%">
+
+
+    <img class="mySlidesTwo w3-animate-fading" 
+        src="champlainfishingguides/laketrouthypermobile.png"
+        alt="Sean on the ice in front of the Crown Point Bridge holding a Lake Trout."
+        title="Lake Champlain Lake Trout Ice Trips" 
+        style="width:100%">
+
+
+    <img class="mySlidesTwo w3-animate-fading" 
+        src="champlainfishingguides/pikeicemobile.png"
+        alt="Sean releasing a pike into a hole."
+        title="Lake Champlain Ice Trips." 
+        style="width:100%">
+
+
+    <img class="mySlidesTwo w3-animate-fading" 
+        src="champlainfishingguides/oswegosalmonrunmobile.png"
+        alt="Sean holding a nice Salmon Hen."
+        title="Salmon of Oz" 
+        style="width:100%">
+
+
+</div>
+</section>
 
 <section id="featuredacc">
 
@@ -454,6 +489,25 @@
     </script>
 
 <!--______-----______----__--__---__---_--GallryScript____________----___---_--_-_--->
+
+<!--______-----______----__--__---__---_--GallryMobile____________----___---_--_-_--->
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlidesTwo");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 9000);    
+    }
+    </script>
+<!--______-----______----__--__---__---_--GallryMobile____________----___---_--_-_--->
 
 <script>
     var acc = document.getElementsByClassName("accordion");

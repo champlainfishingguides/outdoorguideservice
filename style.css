@@ -55,7 +55,7 @@ table {
 
 /*_______________________minwidth1016pxmaxwidth3200px__________*/
 @media only screen and (min-width: 1016px) and (max-width: 3200px){
-  #actiontablet, #dropnavmobile, #hamburger, #tripsII, #tripsIII, #abouttab, #mobilefooter {
+  #actiontablet, #dropnavmobile, #hamburger, #galII, #tripsII, #tripsIII, #abouttab, #mobilefooter {
     display: none;
     
   }
@@ -64,7 +64,7 @@ table {
 
 /*_______________________minwidth721pxmaxwidth1015px__________*/
 @media only screen and (min-width: 721px) and (max-width: 1015px){
-    #title, .navbarright, #trips, #tripsII, #mobilefooter, #about, #dropnav {
+    #title, .navbarright, #galII, #trips, #tripsII, #mobilefooter, #about, #dropnav {
       display: none;
     }
     #mobilefooter {
@@ -97,7 +97,7 @@ table {
 /*_______________________maxwidth721px__________*/
 @media only screen and (max-width: 721px){
 
-  #dropbtn, #title, #animationone, .navbarright, #trips, #featuredacc, #desktopfoot, #about, #tripsIII {
+  #dropbtn, #title, #animationone, #gal, .navbarright, #trips, #featuredacc, #desktopfoot, #about, #tripsIII {
     display: none;
   }
   
@@ -540,7 +540,10 @@ nav a:hover {
   text-align: center;
 }
 
-
+#galII {
+  width: 90%;
+  margin: 5%;
+}
 
 /*_____________________________FADING_ANIMATION_______________________*/
 /* Fading animation */
