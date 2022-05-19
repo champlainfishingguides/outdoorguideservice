@@ -55,9 +55,13 @@ table {
 
 /*_______________________minwidth1016pxmaxwidth3200px__________*/
 @media only screen and (min-width: 1016px) and (max-width: 3200px){
-  #actiontablet, #dropnavmobile, #hamburger, #tripsII, #tripsIII, #mobilefooter, #abouttab {
-    display:none;
+  #actiontablet, #dropnavmobile, #hamburger, #tripsII, #tripsIII, #abouttab, #mobilefooter {
+    display: none;
+    
   }
+  body {
+      background-color: rosybrown;
+    }
 }
 
 /*_______________________minwidth721pxmaxwidth1015px__________*/
@@ -65,7 +69,9 @@ table {
     #title, .navbarright, #trips, #tripsII, #mobilefooter, #about, #dropnav {
       display: none;
     }
-
+    #mobilefooter {
+      display: none;
+    }
     #contact h2 {
         font-size: 30px;
     }
