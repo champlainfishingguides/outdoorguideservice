@@ -97,7 +97,7 @@ table {
 /*_______________________maxwidth721px__________*/
 @media only screen and (max-width: 721px){
 
-  #dropbtn, #title, #animationone, #gal, .navbarright, #trips, #featuredacc, #desktopfoot, #about, #tripsIII {
+  #dropbtn, #title, #animationone, #gal, .navbarright, #trips, #desktopfoot, #about, #tripsIII {
     display: none;
   }
   
